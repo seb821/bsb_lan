@@ -622,12 +622,12 @@ const char STR668[] PROGMEM = "Betriebsniveau";
 */
 
 // Heizkreis 1
-const char STR700[] PROGMEM = "Betriebsart";
-const char STR701[] PROGMEM = "Präsenztaste (temporäre Abwesenheit)";
-const char STR710[] PROGMEM = "Komfortsollwert";
-const char STR711[] PROGMEM = "Komfortsollwert Maximum";
-const char STR712[] PROGMEM = "Reduziertsollwert";
-const char STR714[] PROGMEM = "Frostschutzsollwert";
+const char STR700[] PROGMEM = " Mode : auto = programme de chauffe, manu = touche présence";//XXX Betriebsart
+const char STR701[] PROGMEM = " Präsenztaste (temporäre Abwesenheit) ";
+const char STR710[] PROGMEM = " Consigne de T° ambiante ";//XXX Komfortsollwert
+const char STR711[] PROGMEM = " Consigne de T° ambiante - Maximum ";//XXX Komfortsollwert Maximum
+const char STR712[] PROGMEM = " Consigne réduite de T° ambiante #27 ";//XXX Reduziertsollwert
+const char STR714[] PROGMEM = " Consigne hors gel de T° ambiante #60 ";//XXX Frostschutzsollwert
 const char STR720[] PROGMEM = "Kennlinie Steilheit";
 const char STR721[] PROGMEM = "Kennlinie Verschiebung";
 const char STR726[] PROGMEM = "Kennlinie Adaption";
@@ -799,9 +799,9 @@ const char STR1500[] PROGMEM = "Betriebsartumschaltung";
 const char STR1600[] PROGMEM = "Trinkwasserbetrieb";
 const char STR1601[] PROGMEM = "Manueller TWW-Push";
 const char STR1602[] PROGMEM = "TWW Status";
-const char STR1610[] PROGMEM = "TWW Nennsollwert";
-const char STR1612[] PROGMEM = "TWW Reduziertsollwert";
-const char STR1614[] PROGMEM = "TWW Nennsollwert Maximum";
+const char STR1610[] PROGMEM = " Consigne de T° ECS ";//XXX TWW Nennsollwert
+const char STR1612[] PROGMEM = " Consigne réduite de T° ECS ";//XXX TWW Reduziertsollwert
+const char STR1614[] PROGMEM = " Consigne de T° ECS - Maximum ";//XXX TWW Nennsollwert Maximum
 const char STR1620[] PROGMEM = "TWW Freigabe";
 const char STR1630[] PROGMEM = "TWW Ladevorrang";
 const char STR1640[] PROGMEM = "Legionellenfunktion";
@@ -863,7 +863,7 @@ const char STR2206[] PROGMEM = "Betrieb/Standby";
 const char STR2208[] PROGMEM = "Durchladung Pufferspeicher";
 const char STR2210[] PROGMEM = "Sollwert Minimum";
 const char STR2211[] PROGMEM = "Sollwert Minimum OEM";
-const char STR2212[] PROGMEM = "Sollwert Maximum";
+const char STR2212[] PROGMEM = " Consigne maximum ";//XXX Sollwert Maximum
 const char STR2213[] PROGMEM = "Sollwert Maximum OEM";
 const char STR2214[] PROGMEM = "Sollwert Handbetrieb";
 const char STR2220[] PROGMEM = "Freigabeintegral Stufe 2";
@@ -1306,7 +1306,7 @@ const char STR4810[] PROGMEM = "Durchladung Puffersp";
 const char STR4811[] PROGMEM = "Durchladetemperatur Minimum";
 const char STR4813[] PROGMEM = "Durchladefühler";
 // 5000 Trinkwasserspeicher
-const char STR5010[] PROGMEM = "Trinkwasserladung";
+const char STR5010[] PROGMEM = " ECS ";//XXX Trinkwasserladung
 const char STR5011[] PROGMEM = "Trinkwasser-Speicher Ladevorlegungszeit";
 const char STR5019[] PROGMEM = "TWW Nachlad'Überhöh Schichtensp";
 const char STR5020[] PROGMEM = "TWW Vorlaufsollwertüberhöhung";
@@ -1911,7 +1911,7 @@ const char STR8005[] PROGMEM = "Status Kessel";
 const char STR8006[] PROGMEM = "Status Wärmepumpe";
 const char STR8007[] PROGMEM = "Status Solar";
 const char STR8008[] PROGMEM = "Status Feststoffkessel";
-const char STR8009[] PROGMEM = "Status Brenner";
+const char STR8009[] PROGMEM = " Statut brûleur ";//XXX Status Brenner
 const char STR8010[] PROGMEM = "Status Pufferspeicher";
 const char STR8011[] PROGMEM = "Status Schwimmbad";
 const char STR8022[] PROGMEM = "Status Zusatzerzeuger";
@@ -2117,14 +2117,14 @@ const char STR8568[] PROGMEM = "Drehzahl Festst'pumpe";
 const char STR8570[] PROGMEM = "Betr'std Feststoffkessel";
 
 // Diagnose Verbraucher
-const char STR8700[] PROGMEM = "Aussentemperatur";
+const char STR8700[] PROGMEM = " T° extérieure (sonde B9) #34 #52.3 ";//XXX Aussentemperatur
 const char STR8701[] PROGMEM = "Außentemperatur Minimum";
 const char STR8702[] PROGMEM = "Außentemperatur Maximum";
 const char STR8703[] PROGMEM = "Aussentemperatur gedämpft";
-const char STR8704[] PROGMEM = "Aussentemperatur gemischt";
+const char STR8704[] PROGMEM = " T° extérieure mixte ";//XXX Aussentemperatur gemischt
 const char STR8705[] PROGMEM = "Aussentemperatur LPB";
 const char STR8720[] PROGMEM = "Relative Raumfeuchte";
-const char STR8721[] PROGMEM = "Raumtemperatur";
+const char STR8721[] PROGMEM = " T° ambiante (sonde A6) #33 #52.4 ";//XXX Raumtemperatur
 const char STR8722[] PROGMEM = "Taupunkttemperatur";
 const char STR8730[] PROGMEM = "Heizkreispumpe Q2";
 const char STR8731[] PROGMEM = "Heizkreismischer Auf Y1";
@@ -2133,8 +2133,8 @@ const char STR8735[] PROGMEM = "Drehzahl Heizkreispumpe 1";
 const char STR8740[] PROGMEM = "Raumtemperatur 1";
 const char STR8741[] PROGMEM = "Raumsollwert 1";
 const char STR8742[] PROGMEM = "Raumtemperatur 1 Modell";
-const char STR8743[] PROGMEM = "Vorlauftemperatur 1";
-const char STR8744[] PROGMEM = "Vorlaufsollwert 1";
+const char STR8743[] PROGMEM = " T° chaudière (sonde B2) #52.0 ";//XXX
+const char STR8744[] PROGMEM = " Consigne de débit ";//XXX Vorlaufsollwert 1
 const char STR8749[] PROGMEM = "Raumthermostat 1";
 const char STR8750[] PROGMEM = "Mod Pumpe Sollwert";
 const char STR8751[] PROGMEM = "Kühlkreispumpe Q24";
@@ -2168,7 +2168,7 @@ const char STR8821[] PROGMEM = "Elektroeinsatz TWW K6";
 const char STR8825[] PROGMEM = "Drehzahl Trinkwasserpumpe";
 const char STR8826[] PROGMEM = "Drehzahl TWW Zw'kreispumpe";
 const char STR8827[] PROGMEM = "Drehzahl Dl'erhitzerpumpe";
-const char STR8830[] PROGMEM = "Trinkwassertemperatur 1";
+const char STR8830[] PROGMEM = " T° ECS (sonde B3) #52.1 ";//XXX Trinkwassertemperatur 1
 const char STR8831[] PROGMEM = "Trinkwassersollwert";
 const char STR8832[] PROGMEM = "Trinkwassertemperatur 2";
 const char STR8835[] PROGMEM = "TWW Zirkulationstemperatur";
@@ -2261,58 +2261,58 @@ const char STR10104[] PROGMEM = "INFO HK3/P - TBD";
 
 const char STR10200[] PROGMEM = "Unknown command";
 
-const char STR15004[] PROGMEM = "Mischervorlauftemperatur";
-const char STR15009[] PROGMEM = "Position Drehknopf";
-const char STR15011[] PROGMEM = "Präsenztaste";
-const char STR15012[] PROGMEM = "Verbleibende Ferientage";
-const char STR15019[] PROGMEM = "Heizperiode 1 Montag Start";
-const char STR15020[] PROGMEM = "Heizperiode 1 Montag Ende";
-const char STR15021[] PROGMEM = "Heizperiode 2 Montag Start";
-const char STR15022[] PROGMEM = "Heizperiode 2 Montag Ende";
-const char STR15023[] PROGMEM = "Heizperiode 3 Montag Start";
-const char STR15024[] PROGMEM = "Heizperiode 3 Montag Ende";
-const char STR15025[] PROGMEM = "Heizperiode 1 Dienstag Start";
-const char STR15026[] PROGMEM = "Heizperiode 1 Dienstag Ende";
-const char STR15027[] PROGMEM = "Heizperiode 2 Dienstag Start";
-const char STR15028[] PROGMEM = "Heizperiode 2 Dienstag Ende";
-const char STR15029[] PROGMEM = "Heizperiode 3 Dienstag Start";
-const char STR15030[] PROGMEM = "Heizperiode 3 Dienstag Ende";
-const char STR15031[] PROGMEM = "Heizperiode 1 Mittwoch Start";
-const char STR15032[] PROGMEM = "Heizperiode 1 Mittwoch Ende";
-const char STR15033[] PROGMEM = "Heizperiode 2 Mittwoch Start";
-const char STR15034[] PROGMEM = "Heizperiode 2 Mittwoch Ende";
-const char STR15035[] PROGMEM = "Heizperiode 3 Mittwoch Start";
-const char STR15036[] PROGMEM = "Heizperiode 3 Mittwoch Ende";
-const char STR15037[] PROGMEM = "Heizperiode 1 Donnerstag Start";
-const char STR15038[] PROGMEM = "Heizperiode 1 Donnerstag Ende";
-const char STR15039[] PROGMEM = "Heizperiode 2 Donnerstag Start";
-const char STR15040[] PROGMEM = "Heizperiode 2 Donnerstag Ende";
-const char STR15041[] PROGMEM = "Heizperiode 3 Donnerstag Start";
-const char STR15042[] PROGMEM = "Heizperiode 3 Donnerstag Ende";
-const char STR15043[] PROGMEM = "Heizperiode 1 Freitag Start";
-const char STR15044[] PROGMEM = "Heizperiode 1 Freitag Ende";
-const char STR15045[] PROGMEM = "Heizperiode 2 Freitag Start";
-const char STR15046[] PROGMEM = "Heizperiode 2 Freitag Ende";
-const char STR15047[] PROGMEM = "Heizperiode 3 Freitag Start";
-const char STR15048[] PROGMEM = "Heizperiode 3 Freitag Ende";
-const char STR15049[] PROGMEM = "Heizperiode 1 Samstag Start";
-const char STR15050[] PROGMEM = "Heizperiode 1 Samstag Ende";
-const char STR15051[] PROGMEM = "Heizperiode 2 Samstag Start";
-const char STR15052[] PROGMEM = "Heizperiode 2 Samstag Ende";
-const char STR15053[] PROGMEM = "Heizperiode 3 Samstag Start";
-const char STR15054[] PROGMEM = "Heizperiode 3 Samstag Ende";
-const char STR15055[] PROGMEM = "Heizperiode 1 Sonntag Start";
-const char STR15056[] PROGMEM = "Heizperiode 1 Sonntag Ende";
-const char STR15057[] PROGMEM = "Heizperiode 2 Sonntag Start";
-const char STR15058[] PROGMEM = "Heizperiode 2 Sonntag Ende";
-const char STR15059[] PROGMEM = "Heizperiode 3 Sonntag Start";
-const char STR15060[] PROGMEM = "Heizperiode 3 Sonntag Ende";
-const char STR15061[] PROGMEM = "Uhrzeit";
-const char STR15062[] PROGMEM = "QAA Modell";
-const char STR15064[] PROGMEM = "Zieltemperatur";
+const char STR15004[] PROGMEM = "T° de départ après mélangeur (sonde B1) #52.2 ";
+const char STR15009[] PROGMEM = " Bouton rotatif -3/+3 ";//XXX Position Drehknopf
+const char STR15011[] PROGMEM = " Touche de présence ";//XXX Präsenztaste
+const char STR15012[] PROGMEM = " Jours de vacances restants ";//XXX Verbleibende Ferientage
+const char STR15019[] PROGMEM = " Période de chauffe 1 Lundi Début ";//XXX
+const char STR15020[] PROGMEM = " Période de chauffe 1 Lundi Fin ";//XXX
+const char STR15021[] PROGMEM = " Période de chauffe 2 Lundi Début ";//XXX
+const char STR15022[] PROGMEM = " Période de chauffe 2 Lundi Fin ";//XXX
+const char STR15023[] PROGMEM = " Période de chauffe 3 Lundi Début ";//XXX
+const char STR15024[] PROGMEM = " Période de chauffe 3 Lundi Fin ";//XXX
+const char STR15025[] PROGMEM = " Période de chauffe 1 Mardi Début ";//XXX
+const char STR15026[] PROGMEM = " Période de chauffe 1 Mardi Fin ";//XXX
+const char STR15027[] PROGMEM = " Période de chauffe 2 Mardi Début ";//XXX
+const char STR15028[] PROGMEM = " Période de chauffe 2 Mardi Fin ";//XXX
+const char STR15029[] PROGMEM = " Période de chauffe 3 Mardi Début ";//XXX
+const char STR15030[] PROGMEM = " Période de chauffe 3 Mardi Fin ";//XXX
+const char STR15031[] PROGMEM = " Période de chauffe 1 Mercredi Début ";//XXX
+const char STR15032[] PROGMEM = " Période de chauffe 1 Mercredi Fin ";//XXX
+const char STR15033[] PROGMEM = " Période de chauffe 2 Mercredi Début ";//XXX
+const char STR15034[] PROGMEM = " Période de chauffe 2 Mercredi Fin ";//XXX
+const char STR15035[] PROGMEM = " Période de chauffe 3 Mercredi Début ";//XXX
+const char STR15036[] PROGMEM = " Période de chauffe 3 Mercredi Fin ";//XXX
+const char STR15037[] PROGMEM = " Période de chauffe 1 Jeudi Début ";//XXX
+const char STR15038[] PROGMEM = " Période de chauffe 1 Jeudi Fin ";//XXX
+const char STR15039[] PROGMEM = " Période de chauffe 2 Jeudi Début ";//XXX
+const char STR15040[] PROGMEM = " Période de chauffe 2 Jeudi Fin ";//XXX
+const char STR15041[] PROGMEM = " Période de chauffe 3 Jeudi Début ";//XXX
+const char STR15042[] PROGMEM = " Période de chauffe 3 Jeudi Fin ";//XXX
+const char STR15043[] PROGMEM = " Période de chauffe 1 Vendredi Début ";//XXX
+const char STR15044[] PROGMEM = " Période de chauffe 1 Vendredi Fin ";//XXX
+const char STR15045[] PROGMEM = " Période de chauffe 2 Vendredi Début ";//XXX
+const char STR15046[] PROGMEM = " Période de chauffe 2 Vendredi Fin ";//XXX
+const char STR15047[] PROGMEM = " Période de chauffe 3 Vendredi Début ";//XXX
+const char STR15048[] PROGMEM = " Période de chauffe 3 Vendredi Fin ";//XXX
+const char STR15049[] PROGMEM = " Période de chauffe 1 Samedi Début ";//XXX
+const char STR15050[] PROGMEM = " Période de chauffe 1 Samedi Fin ";//XXX
+const char STR15051[] PROGMEM = " Période de chauffe 2 Samedi Début ";//XXX
+const char STR15052[] PROGMEM = " Période de chauffe 2 Samedi Fin ";//XXX
+const char STR15053[] PROGMEM = " Période de chauffe 3 Samedi Début ";//XXX
+const char STR15054[] PROGMEM = " Période de chauffe 3 Samedi Fin ";//XXX
+const char STR15055[] PROGMEM = " Période de chauffe 1 Dimanche Début ";//XXX
+const char STR15056[] PROGMEM = " Période de chauffe 1 Dimanche Fin ";//XXX
+const char STR15057[] PROGMEM = " Période de chauffe 2 Dimanche Début ";//XXX
+const char STR15058[] PROGMEM = " Période de chauffe 2 Dimanche Fin ";//XXX
+const char STR15059[] PROGMEM = " Période de chauffe 3 Dimanche Début ";//XXX
+const char STR15060[] PROGMEM = " Période de chauffe 3 Dimanche Fin ";//XXX
+const char STR15061[] PROGMEM = " Heure chaudière ";//XXXU hrzeit
+const char STR15062[] PROGMEM = " Modèle de sonde d'ambiance QAA ";//XXX QAA Modell
+const char STR15064[] PROGMEM = " Température cible : 15009+15014 ou 15015 #54 ";//XXX Zieltemperatur
 const char STR15065[] PROGMEM = "Nächstes Schaltprogramm";
-const char STR15066[] PROGMEM = "Manuelles Heizen";
-const char STR15067[] PROGMEM = "Verbindung unterbrochen";
+const char STR15066[] PROGMEM = "Chauffage en local/manuel : horloge pas sélectionnée sur la chaudière ";//XXX Manuelles Heizen
+const char STR15067[] PROGMEM = "Connexion interrompue ";//XXX Verbindung unterbrochen
 
 // A catch-all description string for unrecognised command codes
 const char STR99999[] PROGMEM = "UNKNOWN command code";
@@ -4202,9 +4202,12 @@ const char ENUM8749[] PROGMEM_LATEST = {     // numerical values unverified
 
 // PPS Betriebsart
 const char ENUM15010[] PROGMEM_LATEST = {
-  "\x00 Automatisch\0"
+/*XXX "\x00 Automatisch\0" 
   "\x01 Manuell\0"
-  "\x02 Aus"
+  "\x02 Aus"*/
+  "\x00 Automatique \0" 
+  "\x01 Manuel \0"
+  "\x02 Veille"
 };
 
 const char ENUM15062[] PROGMEM_LATEST = {
