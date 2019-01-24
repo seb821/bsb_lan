@@ -624,10 +624,10 @@ const char STR668[] PROGMEM = "Betriebsniveau";
 // Heizkreis 1
 const char STR700[] PROGMEM = " Mode : auto = programme de chauffe, manu = touche présence";//XXX Betriebsart
 const char STR701[] PROGMEM = " Präsenztaste (temporäre Abwesenheit) ";
-const char STR710[] PROGMEM = " Consigne de T° ambiante ";//XXX Komfortsollwert
-const char STR711[] PROGMEM = " Consigne de T° ambiante - Maximum ";//XXX Komfortsollwert Maximum
-const char STR712[] PROGMEM = " Consigne réduite de T° ambiante #27 ";//XXX Reduziertsollwert
-const char STR714[] PROGMEM = " Consigne hors gel de T° ambiante #60 ";//XXX Frostschutzsollwert
+const char STR710[] PROGMEM = " Consigne T° ambiante ";//XXX Komfortsollwert
+const char STR711[] PROGMEM = " Consigne T° ambiante - Maximum ";//XXX Komfortsollwert Maximum
+const char STR712[] PROGMEM = " Consigne réduite T° ambiante #27 ";//XXX Reduziertsollwert
+const char STR714[] PROGMEM = " Consigne hors gel T° ambiante #60 ";//XXX Frostschutzsollwert
 const char STR720[] PROGMEM = "Kennlinie Steilheit";
 const char STR721[] PROGMEM = "Kennlinie Verschiebung";
 const char STR726[] PROGMEM = "Kennlinie Adaption";
@@ -799,9 +799,9 @@ const char STR1500[] PROGMEM = "Betriebsartumschaltung";
 const char STR1600[] PROGMEM = "Trinkwasserbetrieb";
 const char STR1601[] PROGMEM = "Manueller TWW-Push";
 const char STR1602[] PROGMEM = "TWW Status";
-const char STR1610[] PROGMEM = " Consigne de T° ECS ";//XXX TWW Nennsollwert
-const char STR1612[] PROGMEM = " Consigne réduite de T° ECS ";//XXX TWW Reduziertsollwert
-const char STR1614[] PROGMEM = " Consigne de T° ECS - Maximum ";//XXX TWW Nennsollwert Maximum
+const char STR1610[] PROGMEM = " Consigne T° ECS ";//XXX TWW Nennsollwert
+const char STR1612[] PROGMEM = " Consigne réduite T° ECS ";//XXX TWW Reduziertsollwert
+const char STR1614[] PROGMEM = " Consigne T° ECS - Maximum ";//XXX TWW Nennsollwert Maximum
 const char STR1620[] PROGMEM = "TWW Freigabe";
 const char STR1630[] PROGMEM = "TWW Ladevorrang";
 const char STR1640[] PROGMEM = "Legionellenfunktion";
@@ -1306,7 +1306,7 @@ const char STR4810[] PROGMEM = "Durchladung Puffersp";
 const char STR4811[] PROGMEM = "Durchladetemperatur Minimum";
 const char STR4813[] PROGMEM = "Durchladefühler";
 // 5000 Trinkwasserspeicher
-const char STR5010[] PROGMEM = " ECS ";//XXX Trinkwasserladung
+const char STR5010[] PROGMEM = " ECS (Eau Chaude Sanitaire) ";//XXX Trinkwasserladung
 const char STR5011[] PROGMEM = "Trinkwasser-Speicher Ladevorlegungszeit";
 const char STR5019[] PROGMEM = "TWW Nachlad'Überhöh Schichtensp";
 const char STR5020[] PROGMEM = "TWW Vorlaufsollwertüberhöhung";
@@ -1911,7 +1911,7 @@ const char STR8005[] PROGMEM = "Status Kessel";
 const char STR8006[] PROGMEM = "Status Wärmepumpe";
 const char STR8007[] PROGMEM = "Status Solar";
 const char STR8008[] PROGMEM = "Status Feststoffkessel";
-const char STR8009[] PROGMEM = " Statut brûleur ";//XXX Status Brenner
+const char STR8009[] PROGMEM = " Statut - pompe off => 8, auto mode => 2";//XXX Status Brenner
 const char STR8010[] PROGMEM = "Status Pufferspeicher";
 const char STR8011[] PROGMEM = "Status Schwimmbad";
 const char STR8022[] PROGMEM = "Status Zusatzerzeuger";
@@ -2121,7 +2121,7 @@ const char STR8700[] PROGMEM = " T° extérieure (sonde B9) #34 #52.3 ";//XXX Au
 const char STR8701[] PROGMEM = "Außentemperatur Minimum";
 const char STR8702[] PROGMEM = "Außentemperatur Maximum";
 const char STR8703[] PROGMEM = "Aussentemperatur gedämpft";
-const char STR8704[] PROGMEM = " T° extérieure mixte ";//XXX Aussentemperatur gemischt
+const char STR8704[] PROGMEM = " T° extérieure moyennée ";//XXX Aussentemperatur gemischt
 const char STR8705[] PROGMEM = "Aussentemperatur LPB";
 const char STR8720[] PROGMEM = "Relative Raumfeuchte";
 const char STR8721[] PROGMEM = " T° ambiante (sonde A6) #33 #52.4 ";//XXX Raumtemperatur
@@ -2134,7 +2134,7 @@ const char STR8740[] PROGMEM = "Raumtemperatur 1";
 const char STR8741[] PROGMEM = "Raumsollwert 1";
 const char STR8742[] PROGMEM = "Raumtemperatur 1 Modell";
 const char STR8743[] PROGMEM = " T° chaudière (sonde B2) #52.0 ";//XXX
-const char STR8744[] PROGMEM = " Consigne de débit ";//XXX Vorlaufsollwert 1
+const char STR8744[] PROGMEM = " Consigne T° chaudière ";//XXX Vorlaufsollwert 1
 const char STR8749[] PROGMEM = "Raumthermostat 1";
 const char STR8750[] PROGMEM = "Mod Pumpe Sollwert";
 const char STR8751[] PROGMEM = "Kühlkreispumpe Q24";
@@ -2261,8 +2261,8 @@ const char STR10104[] PROGMEM = "INFO HK3/P - TBD";
 
 const char STR10200[] PROGMEM = "Unknown command";
 
-const char STR15004[] PROGMEM = "T° de départ après mélangeur (sonde B1) #52.2 ";
-const char STR15009[] PROGMEM = " Bouton rotatif -3/+3 ";//XXX Position Drehknopf
+const char STR15004[] PROGMEM = "T° départ après mélangeur (sonde B1) #52.2 ";
+const char STR15009[] PROGMEM = " Bouton rotatif -3/+3 = décalage consigne T° ambiante";//XXX Position Drehknopf
 const char STR15011[] PROGMEM = " Touche de présence ";//XXX Präsenztaste
 const char STR15012[] PROGMEM = " Jours de vacances restants ";//XXX Verbleibende Ferientage
 const char STR15019[] PROGMEM = " Période de chauffe 1 Lundi Début ";//XXX
