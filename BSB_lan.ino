@@ -2072,13 +2072,20 @@ char *printTelegram(byte* msg, int query_line) {
             case VT_PPS_TIME: // PPS: Time and day of week
             {
               switch(weekday()) {
-                case 7: outBufLen+=sprintf(outBuf+outBufLen,"Sa"); break;
+                /*case 7: outBufLen+=sprintf(outBuf+outBufLen,"Sa"); break;
                 case 1: outBufLen+=sprintf(outBuf+outBufLen,"So"); break;
                 case 2: outBufLen+=sprintf(outBuf+outBufLen,"Mo"); break;
                 case 3: outBufLen+=sprintf(outBuf+outBufLen,"Di"); break;
                 case 4: outBufLen+=sprintf(outBuf+outBufLen,"Mi"); break;
                 case 5: outBufLen+=sprintf(outBuf+outBufLen,"Do"); break;
-                case 6: outBufLen+=sprintf(outBuf+outBufLen,"Fr"); break;
+                case 6: outBufLen+=sprintf(outBuf+outBufLen,"Fr"); break;*/
+                case 7: outBufLen+=sprintf(outBuf+outBufLen,"Samedi"); break;
+                case 1: outBufLen+=sprintf(outBuf+outBufLen,"Dimanche"); break;
+                case 2: outBufLen+=sprintf(outBuf+outBufLen,"Lundi"); break;
+                case 3: outBufLen+=sprintf(outBuf+outBufLen,"Mardi"); break;
+                case 4: outBufLen+=sprintf(outBuf+outBufLen,"Mercredi"); break;
+                case 5: outBufLen+=sprintf(outBuf+outBufLen,"Jeudi"); break;
+                case 6: outBufLen+=sprintf(outBuf+outBufLen,"Vendredi"); break;
                 default: break;
               }
               outBufLen+=sprintf(outBuf+outBufLen,", ");
